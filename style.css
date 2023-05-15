@@ -1,0 +1,107 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+--clr-primary-orange: hsl(25, 97%, 53%);
+
+--clr-white: hsl(0, 0%, 100%);
+--clr-light-grey: hsl(217, 12%, 63%);
+--clr-medium-grey: hsl(216, 12%, 54%);
+--clt-dark-grey: hsl(216, 12%, 30%);
+--clr-blue: hsl(213, 19%, 18%);
+--clr-dark-blue: hsl(216, 12%, 8%);
+
+--fw-regular: 400;
+--fw-bold: 700;
+}
+
+body {
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    display: grid;
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    line-height: 1.5;
+    place-content: center;
+}
+
+p {
+    color: var(--clr-light-grey);
+    font-size: .9375rem;
+}
+
+li {
+    background-color: var(--clt-dark-grey);
+    border-radius: 50%;
+    padding: 1em 1.3em;
+}
+
+li:hover {
+    background-color: var(--clr-primary-orange);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.focus {
+    background-color: var(--clr-medium-grey);
+    color: var(--clr-white);
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.visibility__state {
+    display: none;
+}
+
+.rating__state, 
+.end__state {
+    align-items: center;
+    background-color: var(--clr-blue);
+    border-radius: 25px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 375px;
+    padding: 2em;
+}
+
+.rating__state__img {
+    background-color: var(--clt-dark-grey);
+    border-radius: 25px;
+    padding: .5em;
+}
+
+.number__btns {
+    color: var(--clr-light-grey);
+    gap: 2em;
+    list-style: none;
+    margin-top: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.submit__btn {
+    background-color: var(--clr-primary-orange);
+    border: none;
+    border-radius: 25px;
+    color: var(--clr-white);
+    font-size: .900rem;
+    font-weight: var(--fw-regular);
+    letter-spacing: .2rem;
+    margin-top: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 85%;
+}
+
+.submit__btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-primary-orange);
+    cursor: pointer;
+}
